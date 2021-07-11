@@ -7,9 +7,11 @@ Created on Wed Jun 30 08:51:51 2021
 
 import tkinter as tk
 from tkinter import font
+
 class Calculator:
     def __init__(self):
         self.calc_done = False
+        
     def createGui(self):
         self.root = tk.Tk()
         self.root.title("Calculator")
@@ -181,8 +183,5 @@ class Calculator:
         self.calc_done = True
         self.archive_result_listbox.insert(tk.END,str(self.result_variable.get()))
 
-   
-        
-    
-ob = Calculator()
-ob.createGui()
+calc = Calculator()
+calc.createGui()
